@@ -1,0 +1,17 @@
+model: test
+destination: sftp-nec-br-dev
+config:
+  mode: insert
+  path: test_results.csv
+  fileType: csv
+  mappings: []
+  delimiter: ','
+  skipEmpty: true
+  concurrency: 1
+  configVersion: 1
+  autoSyncColumns: true
+  csvRowDelimeter: auto
+  timestampOffsetSeconds: 0
+schedule:
+  type: manual
+schedulePaused: false
