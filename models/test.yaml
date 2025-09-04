@@ -1,0 +1,7 @@
+name: test
+source: sftp
+type: custom
+customQuery:
+  path: test.csv
+  type: string
+primaryKey: reg_pk
