@@ -1,0 +1,12 @@
+# READ ONLY FILE
+# Changes made here will be ignored. Please use the Hightouch dashboard to create and edit sources and destinations.
+
+sources:
+  sftp:
+    name: SFTP NEC BR dev
+    type: sftp
+destinations:
+  sftp-nec-br-dev:
+    name: SFTP NEC BR dev
+    type: sftp
+slug: manifest-os-test
