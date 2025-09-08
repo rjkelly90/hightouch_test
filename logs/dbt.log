@@ -1,0 +1,100 @@
+[0m11:09:39.627122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b166af7b3e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b166a2ce7e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b166c958f50>]}
+
+
+============================== 11:09:39.630688 | 941b154e-909e-4a20-adc4-d4d38563178a ==============================
+[0m11:09:39.630688 [info ] [MainThread]: Running with dbt=1.10.11
+[0m11:09:39.631085 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'empty': 'None', 'profiles_dir': '/home/rkelly/.dbt', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'version_check': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'use_experimental_parser': 'False', 'no_print': 'None', 'static_parser': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'introspect': 'True', 'log_path': 'logs', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'invocation_command': 'dbt init', 'printer_width': '80', 'quiet': 'False', 'partial_parse': 'True', 'debug': 'False'}
+[0m11:09:45.447554 [debug] [MainThread]: Starter project path: /home/rkelly/env/lib/python3.12/site-packages/dbt/include/starter_project
+[0m11:09:45.456866 [info ] [MainThread]: 
+Your new dbt project "dbt_hightouch" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:09:45.457205 [info ] [MainThread]: Setting up your profile.
+[0m11:09:51.447531 [error] [MainThread]: Encountered an error:
+
+[0m11:09:51.461709 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/rkelly/env/lib/python3.12/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rkelly/env/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rkelly/env/lib/python3.12/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/rkelly/env/lib/python3.12/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/home/rkelly/env/lib/python3.12/site-packages/dbt/task/init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/home/rkelly/env/lib/python3.12/site-packages/dbt/task/init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/home/rkelly/env/lib/python3.12/site-packages/dbt/task/init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rkelly/env/lib/python3.12/site-packages/dbt/task/init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "/home/rkelly/env/lib/python3.12/site-packages/click/termui.py", line 168, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/rkelly/env/lib/python3.12/site-packages/click/termui.py", line 151, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m11:09:51.463340 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 11.879494, "process_in_blocks": "75432", "process_kernel_time": 0.152163, "process_mem_max_rss": "101492", "process_out_blocks": "80", "process_user_time": 0.880944}
+[0m11:09:51.463694 [debug] [MainThread]: Command `dbt init` failed at 11:09:51.463629 after 11.88 seconds
+[0m11:09:51.463920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b166e1b3260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1669f94f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1669d9e7b0>]}
+[0m11:09:51.464148 [debug] [MainThread]: Flushing usage events
+[0m11:09:55.814017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e02f5ccbc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e02f5907da0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e02f592a3c0>]}
+
+
+============================== 11:09:55.816137 | d30e56ae-ab2c-43e8-b458-d2c4cb3856a7 ==============================
+[0m11:09:55.816137 [info ] [MainThread]: Running with dbt=1.10.11
+[0m11:09:55.816517 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'write_json': 'True', 'no_print': 'None', 'debug': 'False', 'invocation_command': 'dbt init', 'version_check': 'True', 'printer_width': '80', 'profiles_dir': '/home/rkelly/.dbt', 'fail_fast': 'False', 'introspect': 'True', 'log_path': 'logs', 'static_parser': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'quiet': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'log_format': 'default', 'cache_selected_only': 'False'}
+[0m11:10:10.380987 [info ] [MainThread]: A project called dbt_hightouch already exists here.
+[0m11:10:10.382061 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 14.6044035, "process_in_blocks": "0", "process_kernel_time": 0.079814, "process_mem_max_rss": "98212", "process_out_blocks": "8", "process_user_time": 0.818095}
+[0m11:10:10.382427 [debug] [MainThread]: Command `dbt init` succeeded at 11:10:10.382356 after 14.61 seconds
+[0m11:10:10.382661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e02f514d790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e02f4d9af90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e02f5628260>]}
+[0m11:10:10.382920 [debug] [MainThread]: Flushing usage events
+[0m11:10:46.222030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cb2c072a570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cb2c0cde1b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cb2c05b1a30>]}
+
+
+============================== 11:10:46.224035 | d706db90-7e7c-4eb4-b4c7-1cb9b7b38070 ==============================
+[0m11:10:46.224035 [info ] [MainThread]: Running with dbt=1.10.11
+[0m11:10:46.224372 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'use_experimental_parser': 'False', 'write_json': 'True', 'profiles_dir': '/home/rkelly/.dbt', 'log_path': 'logs', 'static_parser': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'printer_width': '80', 'no_print': 'None', 'indirect_selection': 'eager', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'invocation_command': 'dbt init', 'partial_parse': 'True', 'quiet': 'False', 'use_colors': 'True', 'target_path': 'None', 'empty': 'None', 'debug': 'False', 'log_cache_events': 'False', 'log_format': 'default'}
+[0m11:10:50.988424 [debug] [MainThread]: Starter project path: /home/rkelly/env/lib/python3.12/site-packages/dbt/include/starter_project
+[0m11:10:50.991880 [info ] [MainThread]: 
+Your new dbt project "dbt_hightouch" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:10:50.992237 [info ] [MainThread]: Setting up your profile.
+[0m11:11:31.737313 [info ] [MainThread]: Profile dbt_hightouch written to /home/rkelly/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m11:11:31.738268 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 45.550922, "process_in_blocks": "88", "process_kernel_time": 0.083937, "process_mem_max_rss": "101780", "process_out_blocks": "88", "process_user_time": 0.839374}
+[0m11:11:31.738594 [debug] [MainThread]: Command `dbt init` succeeded at 11:11:31.738521 after 45.55 seconds
+[0m11:11:31.738820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cb2c061c1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cb2bfcc4a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cb2bfb6fef0>]}
+[0m11:11:31.739062 [debug] [MainThread]: Flushing usage events
+[0m11:11:41.787273 [debug] [MainThread]: An error was encountered while trying to flush usage events
